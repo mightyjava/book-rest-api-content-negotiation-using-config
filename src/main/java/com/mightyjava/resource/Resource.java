@@ -11,11 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.mightyjava.dto.Books;
-
 public interface Resource<T> {
-	@GetMapping(produces = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
-	ResponseEntity<Books> findAllBooks();
 
 	@GetMapping
 	ResponseEntity<Collection<T>> findAll();

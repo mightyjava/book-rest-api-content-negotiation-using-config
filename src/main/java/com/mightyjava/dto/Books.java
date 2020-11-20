@@ -17,7 +17,7 @@ public class Books extends ArrayList<Book> {
 
 	}
 
-	@XmlElement
+	@XmlElement(name = "book")
 	public List<Book> getBooks() {
 		return this;
 	}
